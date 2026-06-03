@@ -1,0 +1,24 @@
+# Environment files
+.env
+.env.local
+
+# Python
+backend/venv/
+backend/__pycache__/
+*.pyc
+
+# Node.js
+frontend/node_modules/
+.next/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+
+# Cache
+.cache/
