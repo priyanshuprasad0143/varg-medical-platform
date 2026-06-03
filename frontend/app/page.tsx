@@ -1,3 +1,4 @@
+import React from "react";
 "use client";
 import { useState, useEffect } from "react";
 
@@ -23,7 +24,9 @@ export default function Home() {
   const [doctorsLoading, setDoctorsLoading] = useState(false);
 
   // --- 1. Fetch AI Symptoms Analysis ---
-  const handleAiSubmit = async (e) => {
+  const handleAiSubmit = async (
+  e: React.FormEvent<HTMLFormElement>
+) => {
     e.preventDefault();
     if (!symptoms || !age) return alert("Please fill all fields");
     setAiLoading(true);
